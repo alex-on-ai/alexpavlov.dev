@@ -1,11 +1,11 @@
 ---
 title: 'Alex Pavlov Blog'
 status: 'published'
-slug: 'nextblog'
+slug: 'alexpavlov-dev'
 description: ''
 coverImage: ''
 technologies: [Astro, Tailwind CSS, Pages CMS, Giscus]
-github: 'https://github.com/alex-on-ai/NextBlog'
+github: 'https://github.com/alex-on-ai/alexpavlov.dev'
 link: 'https://alexpavlov.dev'
 publishedAt: '2023-09-29T18:38:58.465Z'
 ---
