@@ -87,3 +87,7 @@ Either:
 - **Directly** — edit the markdown in `content/` and push to the repo.
 
 Posts use frontmatter: `title`, `status` (`published`/`draft`), `slug`, `description`, `tags` (list), `coverImage`, `featured` (boolean), `publishedAt`.
+
+---
+
+Built by [HighCraft.io](https://highcraft.io) — a software and AI engineering team.
