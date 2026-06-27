@@ -1,4 +1,4 @@
-# NextBlog
+# Alex Pavlov Blog
 
 My personal blog — a fast, statically generated site built with **Astro**, edited through **Pages CMS**, and hosted on **Vercel**. Content lives as markdown in this repo (Git-as-CMS): there is no backend, no database, and near-zero client-side JavaScript.
 
@@ -13,7 +13,7 @@ Design based on [pycoder2000/blog](https://github.com/pycoder2000/blog).
 The GitHub repository **is** the database. The loop:
 
 1. Markdown files live in `content/{posts,projects,pages}/`.
-2. **[Pages CMS](https://pagescms.org)** (configured by `.pages.yml`) edits those files through a GitHub App and commits them — editing happens at [app.pagescms.org](https://app.pagescms.org), not on the site itself.
+2. **[Pages CMS](https://pagescms.org)** (configured by `.pages.yml`) edits those files through a GitHub App and commits them — editing happens at [cms.alexpavlov.dev](https://cms.alexpavlov.dev), not on the site itself.
 3. The commit triggers a **Vercel** redeploy.
 4. **Astro content collections** parse the markdown (typed with zod) and run it through the markdown pipeline (GFM, table of contents, Prism highlighting, heading anchors).
 5. The statically generated site updates.
@@ -68,7 +68,7 @@ The GitHub repository **is** the database. The loop:
 
 ## Environment variables
 
-**None required.** The site builds and runs with no secrets. Content editing is handled by the Pages CMS GitHub App (authorize it on this repo at [app.pagescms.org](https://app.pagescms.org)); comments are handled by Giscus.
+**None required.** The site builds and runs with no secrets. Content editing is handled by the self-hosted Pages CMS GitHub App at [cms.alexpavlov.dev](https://cms.alexpavlov.dev); comments are handled by Giscus.
 
 ## Quick start
 
@@ -83,7 +83,7 @@ npm run preview   # serve the production build locally
 
 Either:
 
-- **Pages CMS** — open the repo in [app.pagescms.org](https://app.pagescms.org) (with the Pages CMS GitHub App installed), edit Posts / Projects / Pages, and save. The commit triggers a Vercel redeploy.
+- **Pages CMS** — open the repo in [cms.alexpavlov.dev](https://cms.alexpavlov.dev) (with the Pages CMS GitHub App installed), edit Posts / Projects / Pages, and save. The commit triggers a Vercel redeploy.
 - **Directly** — edit the markdown in `content/` and push to the repo.
 
 Posts use frontmatter: `title`, `status` (`published`/`draft`), `slug`, `description`, `tags` (list), `coverImage`, `featured` (boolean), `publishedAt`.
